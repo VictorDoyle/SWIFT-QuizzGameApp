@@ -16,11 +16,11 @@ class ViewController: UIViewController {
     
     // base tests and setup before actual question load-in
     var questionNumber = 0;
-    let quiz = [
-        "Four + 2 is Equal To 6",
-        "Four + 4 is Equal To 8",
-        "Four + 6 is Equal To 10",
-        "Four + 8 is Equal To 12"
+    
+    let quizzQuestions = [
+        ["Paris is the capital of France", "True"],
+        ["2+2 is equal to 4", "True"],
+        ["Steve Jobs Invented Linux", "False"],
     
     ]
     
@@ -28,12 +28,27 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         updateUIQuestion()
     }
+    
     @IBAction func answerButtonPressed(_ sender: UIButton) {
-        questionNumber += 1;
+        let userAnswer = sender.currentTitle //equate it to the string true or false
+        let verifiedAnswer = quizzQuestions[questionNumber][1]
+        
+        if userAnswer == verifiedAnswer {
+            print("Right Answer")
+        } else {
+            print("Wrong Answer")
+        }
+        if quizzQuestions.count > questionNumber + 1 {
+            questionNumber += 1;
+        } else {
+            questionNumber = 0;
+        }
+      
+        updateUIQuestion()
     }
     
     func updateUIQuestion() {
-        questionLabel.text = quiz[questionNumber];
+        questionLabel.text = quizzQuestions[questionNumber][0];
     }
 
 }
