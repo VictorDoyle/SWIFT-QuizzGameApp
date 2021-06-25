@@ -7,8 +7,9 @@ iOS App built with Xcode &amp; Swift. Game where user picks right or wrong answe
 
 
 ### Snapshot of User Screen
-![FirstQuestion Landing](https://github.com/VictorDoyle/SWIFT-QuizzGameApp/blob/master/Readmefiles/landingOne.png?raw=true)
+<img src="https://github.com/VictorDoyle/SWIFT-QuizzGameApp/blob/master/Readmefiles/landingOne.png?raw=true" width="300px">
 
-![SecondQuestion Landing](https://github.com/VictorDoyle/SWIFT-QuizzGameApp/blob/master/Readmefiles/landingTwo.png?raw=true)
+<img src="https://github.com/VictorDoyle/SWIFT-QuizzGameApp/blob/master/Readmefiles/landingTwo.png?raw=true" width="300px">
+
 
 
